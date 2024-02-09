@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web Page</title>
+    <style>
+       
+        #content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: blanchedalmond;
+        }
+        #cardmin1400 {
+            width: 625px;
+            height: 142px;
+            padding: 0px, 0px, 16px, 0px;
+            /* border-radius: 8px; */
+            background-color: var(--weno-white);
+        }
+        #topcardwarning {
+           
+            height: 36px;
+            border-top-left-radius: var(--weno-border-radius-lg);
+            border-top-right-radius: var(--weno-border-radius-lg);
+            padding: 0.8rem 1.2rem 0.8rem 1.2rem;
+           
+           
+            
+        }
+
+        #cardcontent {
+            padding: 0rem 2.4rem 0rem 2.4rem;
+            margin-top:14px; 
+            display: grid;
+            grid-template-columns: 364px 213px;
+          
+        }
+        #cardsubcontent{
+            padding: 0rem 2.4rem 0rem 2.4rem;
+            margin-top:4px; 
+        }
+       
+    </style>
+    <link rel="stylesheet" href="node_modules/@weno/bootstrap/dist/weno-bootstrap.css">
+    <link rel="stylesheet" href="node_modules/@weno/icons/dist/weno-icons-main.css">
+</head>
+<body>
+    <h1>Welcome to My Web Page</h1>
+    <div id="content">
+        <div id="cardmin1400" class="rounded-3" >
+            <!-- only if warning -->
+            <div id ="topcardwarning" class="bg-red-700 d-flex">
+                <span class="icon-alert_danger_small p-1"></span>
+                <p  class="p-1 ms-3 text-sm-400-primary">Previous prescription version of this medicine is already in use</p>
+            </div>
+            <div id="cardcontent" class="">
+                <p class="title-04-500-primary">Medication name, form ,strength, Paracetamol, medication with long name</p>
+                <div id="cardcontentstatuses" class="ms-6">
+                    <span class="badge badge-informative">New</span> 
+                    <span class="badge badge-danger ms-3">Changes</span>
+                    <span class="badge badge-success ms-3">In use</span>
+                </div>
+                
+            </div>
+            <div id="cardsubcontent">
+                <p class="text-std-400-secondary">Regular</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+    
